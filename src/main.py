@@ -16,7 +16,7 @@ def main():
     elif operator == '*':
         result = operand1 * operand2
     elif operator == '/':
-        if operand2 == 0:
+        if operand2 ==  0:
             print("Error: Division by zero is undefined.")
             return
         result = operand1 / operand2

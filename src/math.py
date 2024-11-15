@@ -9,6 +9,6 @@ def multiplication(x,y):
 
 def division(x,y):
     if y==0:
-        print("division by zero set impossible. Vous pouvez saisir different numéro." )
+        print("division  by zero set impossible. Vous pouvez saisir different numéro." )
     else:
         return x/y

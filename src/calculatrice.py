@@ -4,6 +4,7 @@
 # version : 0.1
 # calculatrice base , 4 operation
 
+
 def addition (x,y):
     return x+y
 
@@ -40,10 +41,10 @@ while True:
         case "4":
             print(f" operation: Soustraction  {num1} - {num2} = {subtraction(num1,num2)} ")
         case "Q" :
-            print(" --------------------QUITTER -------------------")
+            print(" -------------------QUITTER -------------------")
             quit()
 
 
-print("--------------------------------------")
+print("------------------------------------")
 
 main()

@@ -21,7 +21,7 @@ def main():
             return
         result = operand1 / operand2
     else:
-        print("Invalid operator.")
+        print("Invalid operator. ")
         return
 
     # Print the result

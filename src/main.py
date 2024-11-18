@@ -1,4 +1,18 @@
+operator=None
+operand1=None
+operand2=None
+
+
 def main():
+    ask_user_input()
+    result=calculate(operand1,operator,operand2)
+    display_result(result)
+
+
+
+
+def ask_user_input():
+    global operand1,operator,operand2
     # Get first operand from the user
     operand1 = float(input("Enter the first operand: "))
 
@@ -8,6 +22,7 @@ def main():
     # Get second operand from the user
     operand2 = float(input("Enter the second operand: "))
 
+def calculate(operand1,operator,operand2):
     # Perform the operation based on the operator
     if operator == '+':
         result = operand1 + operand2
@@ -24,7 +39,8 @@ def main():
         print("Invalid operator.")
         return
 
-    # Print the result
+# Print the result
+def display_result(result):
     print("Result:", result)
 
 

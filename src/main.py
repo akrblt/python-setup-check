@@ -22,24 +22,24 @@ def ask_user_input():
 
         # Get second operand from the user
         operand2 = float(input("Enter the second operand: "))
-def calculate(op1,ope,op2):
+def calculate(ope1,oper,ope2):
     #Perform the operation based on the operator
-    global result
-    match operator:
+    res =None
+    match oper:
         case '+':
-            result = operand1 + operand2
+            res = ope1 + ope2
         case '-':
-            result = operand1 - operand2
+            res = ope1 - ope2
         case '*':
-            result = operand1 * operand2
+            res = ope1 * ope2
         case '/':
-            if operand2 == 0:
+            if ope2 == 0:
                 print("Error: Division by zero is undefined.")
                 return
-            result = operand1 / operand2
+            res = ope1 / ope2
         case _:
             print("Invalid operator.")
-            return result
+    return res
 
 def display_result(op1,ope,op2,res):
     print(f" {op1} {ope} {op2} = {res}")

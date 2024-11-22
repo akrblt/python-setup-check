@@ -10,6 +10,7 @@ def main():
     result = calculate(operand1,operator,operand2)
     #print the result
     print("Result:", result)
+    display_result(operand1,operator,operand2,result)
 
 def ask_user_input():
         global operand1, operator, operand2
@@ -39,6 +40,9 @@ def calculate(op1,ope,op2):
         case _:
             print("Invalid operator.")
             return result
+
+def display_result(op1,ope,op2,res):
+    print(f" {op1} {ope} {op2} = {res}")
 
 
 
